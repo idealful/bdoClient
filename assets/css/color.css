@@ -1,0 +1,12 @@
+.white1 { background-color : #ffffff !important; color : #000000 !important; }
+.white2 { background-color : #000000 !important; color : #ffffff !important; border : 1px solid #c3c5c7 !important; }
+.black1 { background-color : #000000 !important; color : #ffffff !important; }
+.black2 { background-color : #ffffff !important; color : #000000 !important; border : 1px solid #c3c5c7 !important; }
+.blue1 { background-color : #0f6ab4 !important; color : #ffffff !important; }
+.blue2 { background-color : #e7f0f7 !important; color : #0f6ab4 !important; border : 1px solid #c3d9ec !important; }
+.green1 { background-color : #10a54a !important; color : #ffffff !important; }
+.green2 { background-color : #e7f6ec !important; color : #10a54a !important; border : 1px solid #c3e8d1 !important; }
+.yellow1 { background-color : #c5862b !important; color : #ffffff !important; }
+.yellow2 { background-color : #f9f2e9 !important; color : #c5862b !important; border : 1px solid #f0e0ca !important; }
+.red1 { background-color : #a41e22 !important; color : #ffffff !important; }
+.red2 { background-color : #f5e8e8 !important; color : #a41e22 !important; border : 1px solid #e8c6c7 !important; }

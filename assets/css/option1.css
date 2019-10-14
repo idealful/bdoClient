@@ -1,0 +1,11 @@
+.dspi {display: inline !important;}
+.dspb {display: block !important;}
+.dspn {display: none !important;}
+
+.ttal { text-align: left !important; }
+.ttac { text-align: center !important; }
+.ttar { text-align: right !important; }
+
+.fltl { float: left !important; }
+.fltr { float: right !important; }
+.clrb { clear: both !important; }
