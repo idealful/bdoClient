@@ -1,0 +1,9 @@
+.modeLight {
+    color: black;
+    background-color: white;
+}
+
+.modeDark {
+    color: white;
+    background-color: black;
+}
