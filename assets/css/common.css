@@ -1,6 +1,15 @@
+/* basic */
 @import url("color.css");
-@import url("height.css");
-@import url("margin.css");
 @import url("option1.css");
-@import url("padding.css");
-@import url("width.css");
+
+/* px */
+@import url("px/height.css");
+@import url("px/marginBottom.css");
+@import url("px/marginLeft.css");
+@import url("px/marginRight.css");
+@import url("px/marginTop.css");
+@import url("px/paddingBottom.css");
+@import url("px/paddingLeft.css");
+@import url("px/paddingRight.css");
+@import url("px/paddingTop.css");
+@import url("px/width.css");

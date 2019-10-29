@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>loop</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/common.css">
+</head>
+
+<body>
+    <div class="w100 h100">This is test</div>
+
+    <script type="text/javascript">
+        let start    = 0;
+        let end      = 101;
+        let interval = 1;
+        let key1     = '.pr';
+        let key2     = 'padding-right';
+        let key3     = 'px';
+
+        const ELEM_TARGET = document.querySelector('body');
+        let ELEM_NEW = document.createElement('div');
+
+        for (let i = start, j = 0; i < end; i++, j += interval) {
+            let result = key1 + j + ' { ' + key2 + ': ' + j + key3 + ' !important; }';
+
+            let ELEM_NEW = document.createElement('div');
+
+            ELEM_NEW.innerText = result;
+            ELEM_TARGET.appendChild(ELEM_NEW);
+        }
+    </script>
+</body>
+
+</html>
