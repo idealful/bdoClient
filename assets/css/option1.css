@@ -9,3 +9,11 @@
 .fltl { float: left !important; }
 .fltr { float: right !important; }
 .clrb { clear: both !important; }
+
+.fwb { font-weight: bold; }
+
+a { text-decoration: none !important; }
+a:link { color: #646464 }
+a:visited { color: #646464 }
+a:hover { color: #646464; }
+a:active { color: #646464 }
