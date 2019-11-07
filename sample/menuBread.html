@@ -12,7 +12,7 @@
     <header>
         <div class="head-content">
             <h1><a href="">logo</a></h1>
-            <button type="button" id="m-btn-nav" class="only-m m-btn-nav">
+            <button type="button" id="btn-nav-mobile" class="mobile btn-nav-mobile">
                 <span></span>
             </button>
             <div class="nav">
@@ -61,8 +61,7 @@
         const ELEM_MENU_UL_ALL = document.querySelectorAll('header .nav > ul');
         const ELEM_MENU_UL = document.querySelector('header .nav > ul');
         const ELEM_MENU_UL_LI = document.querySelectorAll('header .nav > ul > li');
-        const ELEM_MOBILE_BTN_MENU = document.querySelector('.m-btn-nav');
-        const a = document.getElementById('m-btn-nav');
+        const ELEM_MENU_MOBILE = document.querySelector('#btn-nav-mobile');
 
         function elemMenuUlLiMouseOverHandler(event) {
             ELEM_MENU_UL_LI.forEach((item) => {
@@ -76,16 +75,28 @@
             });
         }
 
-        function elemMobileBtnMenuClickHandler() {
+        function showMenuList() {
             ELEM_MENU_UL.classList.toggle('active');
         }
 
-        function init() {
+        function setResponsiveMenuDesktop() {
             ELEM_MENU_UL_LI.forEach((item) => {
                 item.addEventListener('mouseover', elemMenuUlLiMouseOverHandler);
                 item.addEventListener('mouseout', elemMenuUlLiMouseOutHandler);
             });
-            ELEM_MOBILE_BTN_MENU.addEventListener('click', elemMobileBtnMenuClickHandler);
+            showMenuList();
+        }
+
+        function setResponsiveMenuMobile() {
+            ELEM_MENU_MOBILE.addEventListener('click', showMenuList);
+        }
+
+        function init() {
+            if (window.innerWidth > 767) {
+                setResponsiveMenuDesktop();
+            } else {
+                setResponsiveMenuMobile();
+            }
         }
 
         init();

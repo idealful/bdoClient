@@ -6,7 +6,7 @@ h2 { font-size: 16px; }
 h3 { font-size: 14px; }
 
 @media ( min-width: 768px ) {
-    .only-m { display: none; }
+    .mobile { display: none; }
 
     header { background: #999999; }
     header .head-content { max-width: 100%; width: 100%; margin: auto; overflow: hidden; }
@@ -29,12 +29,12 @@ h3 { font-size: 14px; }
 }
 
 @media ( max-width: 767px ) {
-    .only-m { display: block; }
+    .mobile { display: block; }
 
-    .m-btn-nav { background: transparent; height: 8px; border: 0; cursor: pointer; margin: 16px 4px 0 0; float: right;}
-    .m-btn-nav span { display: block; width: 15px; height: 2px; background: #000000; position: relative; }
-    .m-btn-nav span:before { display: block; width: 15px; height: 2px; background: #000000; position: absolute; top: -5px; left: 0; content: " "; }
-    .m-btn-nav span:after { display: block; width: 15px; height: 2px; background: #000000; position: absolute; bottom: -5px; left: 0; content: " "; }
+    .btn-nav-mobile { background: transparent; height: 8px; border: 0; cursor: pointer; margin: 16px 4px 0 0; float: right;}
+    .btn-nav-mobile span { display: block; width: 15px; height: 2px; background: #000000; position: relative; }
+    .btn-nav-mobile span:before { display: block; width: 15px; height: 2px; background: #000000; position: absolute; top: -5px; left: 0; content: " "; }
+    .btn-nav-mobile span:after { display: block; width: 15px; height: 2px; background: #000000; position: absolute; bottom: -5px; left: 0; content: " "; }
 
     header { background: #999999; width: 100%; text-align: center; position: fixed; top: 0; left: 0; }
     header .head-content { max-width: 100%; width: 100%; margin: auto; overflow: hidden; box-sizing: border-box; }
