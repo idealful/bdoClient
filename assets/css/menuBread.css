@@ -1,6 +1,6 @@
 * { padding: 0; margin: 0; }
-ul,li,ol,li { list-style: none; }
-a { display: block; color: #333; text-decoration: none; }
+ul, li, ol, li { list-style: none; }
+a { display: block; text-decoration: none; }
 h1 { font-size: 20px; }
 h2 { font-size: 16px; }
 h3 { font-size: 14px; }
@@ -8,7 +8,7 @@ h3 { font-size: 14px; }
 @media screen and (min-width: 769px) {
     .only-m { display: none; }
 
-    header { width: 100%; text-align: center;  background: rgba(0, 0, 0 , 0.5); }
+    header { width: 100%; text-align: center; background: rgba(0, 0, 0 , 0.5); }
     header .head-content { max-width: 1280px; width: 100%; padding: 10px 10px 7px; margin: auto; overflow: hidden; }
     header .head-content:after { clear: both; display: block; content: ""; }
 
@@ -21,24 +21,22 @@ h3 { font-size: 14px; }
     header .nav > ul li.dep02 { float: left}
     header .nav > ul li.dep02 h2 { margin: 0 10px; }
     header .nav > ul li.dep02 h2 a { padding: 0 3px; color: #ebebeb; }
-    header .nav > ul li.dep02.active h2 a { color: #000; }
+    header .nav > ul li.dep02 h2 a:hover { color: #000; }
     header .nav > ul li.dep02 h2 ~ ul.dep03 { max-height: 0; position: relative; margin-top: 10px; transition: all 0.4s linear; }
     header .nav > ul li.dep02.active h2 ~ ul.dep03 { max-height: 200px; }
-    header .nav > ul li.dep02 h2 ~ ul.dep03 li { }
-    header .nav > ul li.dep02 h2 ~ ul.dep03 li h3 { }
     header .nav > ul li.dep02 h2 ~ ul.dep03 li h3 a { padding: 4px 0; }
     header .nav > ul li.dep02 h2 ~ ul.dep03 li h3 a:hover { color: #000; }
 }
 
-@media screen and (max-width: 768px)  { 
+@media screen and (max-width: 768px) { 
     .only-m { display: block; }
 
-    .m-btn-nav { width: 30px; height:  24px; float: right; padding: 5px; margin-top: 10px; background:  transparent; border:  0; }
+    .m-btn-nav { width: 30px; height: 30px; float: right; padding: 0 0 0 7px; margin-top: 10px; background:  transparent; border: 0; cursor: pointer; }
     .m-btn-nav span { display: block; width: 15px; height: 2px; background: #fff; position: relative; }
     .m-btn-nav span:before { display: block; width: 15px; height: 2px; background: #fff; position: absolute; top: -5px; left: 0; content: " "; }
     .m-btn-nav span:after { display: block; width: 15px; height: 2px; background: #fff; position: absolute; bottom: -5px; left: 0; content: " "; }
 
-    header { width: 100%; text-align: center;  background: rgba(0, 0, 0 , 0.5); position: fixed; top: 0; left: 0; }
+    header { width: 100%; text-align: center; background: rgba(0, 0, 0 , 0.5); position: fixed; top: 0; left: 0; }
     header .head-content { max-width: 100%; width: 100%; padding: 10px 10px 0px; margin: auto; overflow: hidden; box-sizing: border-box; }
     header .head-content:after { clear: both; display: block; content: ""; }
 
@@ -53,9 +51,7 @@ h3 { font-size: 14px; }
     header .nav > ul li.dep02 h2 { width: 100%; margin: 0 0px; }
     header .nav > ul li.dep02 h2 a { padding: 5 10px; color: #ebebeb; text-align: center; }
     header .nav > ul li.dep02.active h2 a { color: #000; }
-    header .nav > ul li.dep02 h2 ~ ul.dep03 { display:  none; max-height: 200px; position: relative; margin-top: 0px; transition:  none; }
-    header .nav > ul li.dep02.active h2 ~ ul.dep03 { display:  block; max-height: 200px; }
-    header .nav > ul li.dep02 h2 ~ ul.dep03 li { }
-    header .nav > ul li.dep02 h2 ~ ul.dep03 li h3 { }
+    header .nav > ul li.dep02 h2 ~ ul.dep03 { display: none; max-height: 200px; position: relative; margin-top: 0px; transition: none; }
+    header .nav > ul li.dep02.active h2 ~ ul.dep03 { display: block; max-height: 200px; }
     header .nav > ul li.dep02 h2 ~ ul.dep03 li h3 a { padding: 4px 0; }
 }

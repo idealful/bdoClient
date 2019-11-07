@@ -12,42 +12,44 @@
     <header>
         <div class="head-content">
             <h1><a href="">logo</a></h1>
-            <button type="button" class="only-m m-btn-nav">
+            <button type="button" id="m-btn-nav" class="only-m m-btn-nav">
                 <span></span>
             </button>
             <div class="nav">
                 <ul>
                     <li class="dep02">
-                        <h2><a href="#">dep02</a></h2>
+                        <h2><a href="#">메뉴1</a></h2>
+                    </li>
+                    <li class="dep02">
+                        <h2><a href="#">메뉴2</a></h2>
                         <ul class="dep03">
                             <li>
-                                <h3><a href="#">dep03</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="#">dep03</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="#">dep03</a></h3>
+                                <h3><a href="#">메뉴2-1</a></h3>
                             </li>
                         </ul>
                     </li>
                     <li class="dep02">
-                        <h2><a href="#">dep02</a></h2>
-                    </li>
-                    <li class="dep02">
-                        <h2><a href="#">dep02</a></h2>
-                    </li>
-                    <li class="dep02">
-                        <h2><a href="#">dep02</a></h2>
+                        <h2><a href="#">메뉴3</a></h2>
                         <ul class="dep03">
                             <li>
-                                <h3><a href="#">dep03</a></h3>
+                                <h3><a href="#">메뉴3-1</a></h3>
                             </li>
                             <li>
-                                <h3><a href="#">dep03</a></h3>
+                                <h3><a href="#">메뉴3-2</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dep02">
+                        <h2><a href="#">메뉴4</a></h2>
+                        <ul class="dep03">
+                            <li>
+                                <h3><a href="#">메뉴4-1</a></h3>
                             </li>
                             <li>
-                                <h3><a href="#">dep03</a></h3>
+                                <h3><a href="#">메뉴4-2</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="#">메뉴4-3</a></h3>
                             </li>
                         </ul>
                     </li>
@@ -55,8 +57,41 @@
             </div>
         </div>
     </header>
-    <script type="text/javascript" src="../assets/js/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="../assets/js/menuBread.js"></script>
+    <script type="text/javascript">
+        const ELEM_MENU_UL_ALL = document.querySelectorAll('header .nav > ul');
+        const ELEM_MENU_UL = document.querySelector('header .nav > ul');
+        const ELEM_MENU_UL_LI = document.querySelectorAll('header .nav > ul > li');
+        const ELEM_MOBILE_BTN_MENU = document.querySelector('.m-btn-nav');
+        const a = document.getElementById('m-btn-nav');
+
+        function elemMenuUlLiMouseOverHandler(event) {
+            ELEM_MENU_UL_LI.forEach((item) => {
+                item.classList.add('active');
+            });
+        }
+
+        function elemMenuUlLiMouseOutHandler(event) {
+            ELEM_MENU_UL_LI.forEach((item) => {
+                item.classList.remove('active');
+            });
+        }
+
+        function elemMobileBtnMenuClickHandler() {
+            ELEM_MENU_UL.classList.toggle('active');
+        }
+
+        function init() {
+            console.log(window.innerWidth);
+
+            ELEM_MENU_UL_LI.forEach((item) => {
+                item.addEventListener('mouseover', elemMenuUlLiMouseOverHandler);
+                item.addEventListener('mouseout', elemMenuUlLiMouseOutHandler);
+            });
+            ELEM_MOBILE_BTN_MENU.addEventListener('click', elemMobileBtnMenuClickHandler);
+        }
+
+        init();
+    </script>
 </body>
 
 </html>
