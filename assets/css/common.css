@@ -1,6 +1,7 @@
 /* basic */
 @import url("color.css");
 @import url("option1.css");
+@import url("responsive.css");
 
 /* px */
 @import url("px/height.css");

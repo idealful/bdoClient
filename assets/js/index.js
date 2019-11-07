@@ -22,9 +22,3 @@ function setColorMode() {
         });
     });
 }
-
-function init() {
-    setColorMode();
-}
-
-init();

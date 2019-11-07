@@ -1,5 +1,6 @@
 .dspi {display: inline !important;}
 .dspb {display: block !important;}
+.dspf {display: flex !important;}
 .dspn {display: none !important;}
 
 .ttal { text-align: left !important; }
@@ -11,9 +12,3 @@
 .clrb { clear: both !important; }
 
 .fwb { font-weight: bold; }
-
-a { text-decoration: none !important; }
-a:link { color: #646464 }
-a:visited { color: #646464 }
-a:hover { color: #646464; }
-a:active { color: #646464 }
