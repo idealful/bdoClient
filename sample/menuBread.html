@@ -15,7 +15,7 @@
             <button type="button" id="btn-nav-mobile" class="mobile btn-nav-mobile">
                 <span></span>
             </button>
-            <div class="nav">
+            <div class="menu-content">
                 <ul>
                     <li class="dep02">
                         <h2><a href="#">메뉴1</a></h2>
@@ -58,9 +58,9 @@
         </div>
     </header>
     <script type="text/javascript">
-        const ELEM_MENU_UL_ALL = document.querySelectorAll('header .nav > ul');
-        const ELEM_MENU_UL = document.querySelector('header .nav > ul');
-        const ELEM_MENU_UL_LI = document.querySelectorAll('header .nav > ul > li');
+        const ELEM_MENU_UL_ALL = document.querySelectorAll('header .menu-content > ul');
+        const ELEM_MENU_UL = document.querySelector('header .menu-content > ul');
+        const ELEM_MENU_UL_LI = document.querySelectorAll('header .menu-content > ul > li');
         const ELEM_MENU_MOBILE = document.querySelector('#btn-nav-mobile');
 
         function elemMenuUlLiMouseOverHandler(event) {
@@ -75,8 +75,12 @@
             });
         }
 
-        function showMenuList() {
+        function toggleMenuList() {
             ELEM_MENU_UL.classList.toggle('active');
+        }
+
+        function hideMenuList() {
+            ELEM_MENU_UL.classList.remove('active');
         }
 
         function setResponsiveMenuDesktop() {
@@ -84,19 +88,25 @@
                 item.addEventListener('mouseover', elemMenuUlLiMouseOverHandler);
                 item.addEventListener('mouseout', elemMenuUlLiMouseOutHandler);
             });
-            showMenuList();
+            toggleMenuList();
         }
 
         function setResponsiveMenuMobile() {
-            ELEM_MENU_MOBILE.addEventListener('click', showMenuList);
+            hideMenuList();
+            ELEM_MENU_MOBILE.addEventListener('click', toggleMenuList);
         }
 
-        function init() {
+        function setResponsiveAutomatic() {
             if (window.innerWidth > 767) {
                 setResponsiveMenuDesktop();
             } else {
                 setResponsiveMenuMobile();
             }
+        }
+
+        function init() {
+            setResponsiveAutomatic();
+            window.addEventListener('resize', setResponsiveAutomatic);
         }
 
         init();
