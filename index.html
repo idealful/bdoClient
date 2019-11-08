@@ -85,11 +85,13 @@
 
     <section>
         <article>
-            <h2>Welcome!</h2>
-            <h2>Welcome!</h2>
-            <h2>Welcome!</h2>
-            <h2>Welcome!</h2>
-            <h2>Welcome!</h2>
+            <h2>What is HTML?</h2>
+            <a href="https://www.w3schools.com/html" target="_blank">Sources</a>
+            <ul id="content">
+                <li>HTML is the standard markup language for Web pages.</li>
+                <li>With HTML you can create your own Website.</li>
+                <li>HTML is easy to learn - You will enjoy it!</li>
+            </ul>
         </article>
     </section>
 
@@ -102,13 +104,15 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/colorMode.js"></script>
     <script type="text/javascript" src="assets/js/responsive.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
     <script type="text/javascript">
         function init() {
             setColorMode();
             setResponsiveAutomatic();
             window.addEventListener('resize', setResponsiveAutomatic);
+            setBtnEventListener();
         }
 
         init();
