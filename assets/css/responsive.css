@@ -1,50 +1,53 @@
 * { padding: 0; margin: 0; }
-ul, li, ol, li { list-style: none; }
-a { display: block; text-decoration: none; color: #000000; }
-h1 { font-size: 20px; }
-h2 { font-size: 16px; }
-h3 { font-size: 14px; }
 
 @media ( min-width: 768px ) {
     .mobile { display: none; }
 
-    header { background: #999999; }
+    ul li, ol li { list-style: none; }
+    
+    h1 { font-size: 20px; }
+    h2 { font-size: 16px; }
+    h3 { font-size: 14px; }
+    
+    header { background-color: #99ccff; font-weight: bold; text-align: left; }
     header .head-content { max-width: 100%; width: 100%; margin: auto; overflow: hidden; }
     header .head-content:after { clear: both; display: block; content: ""; }
-    
     header h1 { float: left; margin: 6px 0 0 10px; }
-    header h1 a { text-transform: uppercase; }
-    
+    header a { display: block; text-decoration: none; color: #000000; }
     header .menu-content { display: inline-block; margin: auto; }
-    header .menu-content > ul { margin-top: 10px; }
+    header .menu-content > ul { margin: 10px 0 0 0; }
     header .menu-content > ul:after { clear: both; display: block; content: ""; }
     header .menu-content > ul li.dep02 { float: left; }
     header .menu-content > ul li.dep02 h2 { margin: 0 10px 0 10px; }
-    header .menu-content > ul li.dep02 h2 a { padding: 0 3px 0 3px; }
-    header .menu-content > ul li.dep02 h2 a:hover { color: #cccccc; }
+    header .menu-content > ul li.dep02 h2 a { padding: 0 0 0 0; }
+    header .menu-content > ul li.dep02 h2 a:hover { color: #3333ff; }
     header .menu-content > ul li.dep02 h2 ~ ul.dep03 { max-height: 0; position: relative; margin: 10px 0 0 10px; transition: all 0.4s linear; }
     header .menu-content > ul li.dep02.active h2 ~ ul.dep03 { max-height: 200px; }
     header .menu-content > ul li.dep02 h2 ~ ul.dep03 li h3 a { padding: 4px 0 4px 0; }
-    header .menu-content > ul li.dep02 h2 ~ ul.dep03 li h3 a:hover { color: #cccccc; }
+    header .menu-content > ul li.dep02 h2 ~ ul.dep03 li h3 a:hover { color: #3333ff; }
 }
 
 @media ( max-width: 767px ) {
     .mobile { display: block; }
 
-    header { background: #999999; width: 100%; text-align: center; }
+    ul li, ol li { list-style: none; }
+    
+    h1 { font-size: 20px; }
+    h2 { font-size: 16px; }
+    h3 { font-size: 14px; }
+    
+    header { background-color: #99ccff; font-weight: bold; text-align: center; width: 100%; }
     header .head-content { max-width: 100%; width: 100%; margin: auto; overflow: hidden; box-sizing: border-box; }
     header .head-content:after { clear: both; display: block; content: ""; }
-
     header h1 { float: left; margin: 6px 0 0 10px; }
-    header h1 a { text-transform: uppercase; }
-
+    header a { display: block; text-decoration: none; color: #000000; }
     header .menu-content { display: inline-block; width: 100%; }
     header .menu-content > ul { display: none; }
     header .menu-content > ul.active { display: block; line-height: 30px;}
     header .menu-content > ul li.dep02:first-child:before { display: block; content: ""; margin: 21px 0 0 0; }
 
     .btn-nav-mobile { background: transparent; height: 8px; border: 0; cursor: pointer; margin: 16px 4px 0 0; float: right;}
-    .btn-nav-mobile span { display: block; width: 15px; height: 2px; background: #000000; position: relative; }
-    .btn-nav-mobile span:before { display: block; width: 15px; height: 2px; background: #000000; position: absolute; top: -5px; left: 0; content: " "; }
-    .btn-nav-mobile span:after { display: block; width: 15px; height: 2px; background: #000000; position: absolute; bottom: -5px; left: 0; content: " "; }
+    .btn-nav-mobile span { display: block; width: 15px; height: 2px; background-color: #000000; position: relative; }
+    .btn-nav-mobile span:before { display: block; width: 15px; height: 2px; background-color: #000000; position: absolute; top: -5px; left: 0; content: " "; }
+    .btn-nav-mobile span:after { display: block; width: 15px; height: 2px; background-color: #000000; position: absolute; bottom: -5px; left: 0; content: " "; }
 }
