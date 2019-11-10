@@ -37,7 +37,7 @@ function setResponsiveMenuMobile() {
 }
 
 function setResponsiveAutomatic() {
-    if (window.innerWidth > 767) {
+    if (window.innerWidth > 1223) {
         setResponsiveMenuDesktop();
     } else {
         setResponsiveMenuMobile();

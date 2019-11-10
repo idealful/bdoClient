@@ -1,7 +1,7 @@
 * { padding: 0; margin: 0; }
 
 /* Desktop */
-@media ( min-width: 768px ) {
+@media only screen and (min-width : 1224px) {
     .mobile { display: none; }
 
     header { background-color: #99ccff; font-weight: bold; text-align: left; }
@@ -26,7 +26,7 @@
 }
 
 /* Mobile */
-@media ( max-width: 767px ) {
+@media only screen and (max-width : 1223px) {
     .mobile { display: block; }
 
     header { background-color: #99ccff; font-weight: bold; text-align: center; width: 100%; }
