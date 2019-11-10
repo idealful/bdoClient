@@ -9,9 +9,9 @@
     header { background-color: #99ccff; font-weight: bold; text-align: left; }
     header .head-content { max-width: 100%; width: 100%; margin: auto; overflow: hidden; }
     header .head-content:after { clear: both; display: block; content: ""; }
-    header h1 { float: left; margin: 6px 0 0 10px; font-size: 20px; }
-    header h2 { font-size: 16px; }
-    header h3 { font-size: 14px; }
+    header h1 { float: left; margin: 6px 0 0 10px; font-size: 1.25rem; }
+    header h2 { font-size: 1rem; }
+    header h3 { font-size: 0.8rem; }
     header ul li, ol li { list-style: none; }
     header a { display: block; text-decoration: none; color: #000000; }
     header .menu-content { display: inline-block; margin: auto; }
@@ -31,12 +31,14 @@
 @media only screen and (max-width : 1023px) {
     .mobile { display: block; }
 
+    * { font-size-adjust: ; }
+
     header { background-color: #99ccff; font-weight: bold; text-align: center; width: 100%; }
     header .head-content { max-width: 100%; width: 100%; margin: auto; overflow: hidden; box-sizing: border-box; }
     header .head-content:after { clear: both; display: block; content: ""; }
-    header h1 { float: left; margin: 6px 0 0 10px; font-size: 20px; }
-    header h2 { font-size: 16px; }
-    header h3 { font-size: 14px; }
+    header h1 { float: left; margin: 6px 0 0 10px; font-size: 1.25rem; }
+    header h2 { font-size: 1rem; }
+    header h3 { font-size: 0.8rem; }
     header ul li, ol li { list-style: none; }
     header a { display: block; text-decoration: none; color: #000000; }
     header .menu-content { display: inline-block; width: 100%; }
