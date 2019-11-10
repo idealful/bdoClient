@@ -37,7 +37,6 @@ function setResponsiveMenuMobile() {
 }
 
 function setResponsiveAutomatic() {
-    document.querySelector('#width').innerText = window.innerWidth + ', ' + window.outerWidth;
     if (window.outerWidth >= 1024) {
         setResponsiveMenuDesktop();
     } else {
